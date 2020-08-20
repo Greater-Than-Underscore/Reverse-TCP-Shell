@@ -1,5 +1,6 @@
 import pyautogui
 from discord_webhook import DiscordWebhook, DiscordEmbed
+import srm
 
 #configs
 def screenshot(srm):
@@ -23,6 +24,5 @@ def screenshot(srm):
 
 #option to remove file
 
-    if srm == 'srm':
-        import srm.srm
+    if srm == true():
         srm.srm('screen.png')
